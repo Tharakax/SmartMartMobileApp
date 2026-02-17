@@ -18,5 +18,10 @@ class Sign_in : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val tvSignUp = findViewById<android.widget.TextView>(R.id.tvSignUp)
+        tvSignUp.setOnClickListener {
+            val intent = android.content.Intent(this, SignUp::class.java)
+            startActivity(intent)
+        }
     }
 }

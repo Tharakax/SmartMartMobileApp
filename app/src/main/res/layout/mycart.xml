@@ -74,7 +74,7 @@
                     android:id="@+id/imgApple"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/img_5"
+                    android:src="@drawable/img_16"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -117,7 +117,7 @@
                     android:id="@+id/imgOrange"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/img_1"
+                    android:src="@drawable/img_17"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -159,7 +159,7 @@
                     android:id="@+id/imgAvacado"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/img_6"
+                    android:src="@drawable/img_18"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -202,7 +202,7 @@
                     android:id="@+id/imgGrafe"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/img_7"
+                    android:src="@drawable/img_19"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -244,7 +244,7 @@
                     android:id="@+id/imgCabbage"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/img_8"
+                    android:src="@drawable/img_20"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -280,12 +280,13 @@
                  However, bottom nav is also there.
                  I'll place it inside scroll for now as per simple layout logic, but could be outside.)
                  Actually, looking at screenshot, there is space below Cabbage. I'll put it after items. -->
-            
-             <androidx.appcompat.widget.AppCompatButton
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextoncart"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                 android:layout_marginTop="16dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/bg_add_to_cart"
                 android:text="Next"
                 android:textAllCaps="false"
