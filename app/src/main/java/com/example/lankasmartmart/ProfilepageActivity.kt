@@ -27,6 +27,19 @@ class ProfilepageActivity : AppCompatActivity() {
         navCart.setOnClickListener {
             startActivity(android.content.Intent(this, MycartActivity::class.java))
         }
+
+        // My Orders Navigation
+        val myOrderBtn = findViewById<android.widget.LinearLayout>(R.id.myorderbtn)
+        myOrderBtn.setOnClickListener {
+            startActivity(android.content.Intent(this, OrderstateActivity::class.java))
+        }
+
+        // Logout Navigation
+        val logoutBtn = findViewById<android.widget.LinearLayout>(R.id.logoutonprofile)
+        logoutBtn.setOnClickListener {
+            startActivity(android.content.Intent(this, Sign_in::class.java))
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

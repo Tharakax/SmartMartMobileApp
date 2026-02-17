@@ -13,6 +13,11 @@ class Home1 : AppCompatActivity() {
         setContentView(R.layout.activity_home1)
 
         // Navigation Logic
+        val searchLayout = findViewById<android.widget.LinearLayout>(R.id.searchLayout)
+        searchLayout.setOnClickListener {
+            startActivity(android.content.Intent(this, SearchpageActivity::class.java))
+        }
+
         val navHome = findViewById<android.widget.ImageView>(R.id.navHome)
         navHome.setOnClickListener {
             startActivity(android.content.Intent(this, ItemspageActivity::class.java))

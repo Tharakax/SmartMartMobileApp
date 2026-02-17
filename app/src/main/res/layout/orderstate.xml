@@ -102,14 +102,7 @@
                                  but user prompt was "according status details". Screenshot has typo.
                                  I will fix it to "Complete". -->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="..........................................."
-                            android:textColor="@color/black"
-                            android:maxLines="1"
-                            android:ellipsize="none"/>
-                            <!-- Dotted line decoration as in screenshot -->
+                        <!-- Dotted line decoration as in screenshot -->
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -152,10 +145,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20-09-202"
+                            android:text="10-02-2026"
                             android:textColor="@color/black"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
                             <!-- Screenshot says 20-09-202 (truncated year?). Keeping as is or adding last digit? 
                                  I'll add '3' to make it 2023 for logic. -->
                     </LinearLayout>
@@ -200,10 +193,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20-09-2023"
+                            android:text="20-01-2026"
                             android:textColor="@color/black"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -246,10 +239,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20-09-2023"
+                            android:text="19-01-2026"
                             android:textColor="@color/black"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
