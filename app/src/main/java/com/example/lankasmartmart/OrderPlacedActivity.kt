@@ -38,5 +38,10 @@ class OrderPlacedActivity : AppCompatActivity() {
             startActivity(android.content.Intent(this, ProfilepageActivity::class.java))
         }
 
+        val ivBack = findViewById<android.widget.ImageView>(R.id.ivBack)
+        ivBack.setOnClickListener {
+            finish()
+        }
+
     }
 }

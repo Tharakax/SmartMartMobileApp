@@ -12,5 +12,10 @@ class NotificationpageActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.notificationpage)
 
+        val ivBack = findViewById<android.widget.ImageView>(R.id.ivBack)
+        ivBack.setOnClickListener {
+            finish()
+        }
+
     }
 }

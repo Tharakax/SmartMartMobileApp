@@ -12,5 +12,10 @@ class OrderstateActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.orderstate)
 
+        val ivBack = findViewById<android.widget.ImageView>(R.id.ivBack)
+        ivBack.setOnClickListener {
+            finish()
+        }
+
     }
 }

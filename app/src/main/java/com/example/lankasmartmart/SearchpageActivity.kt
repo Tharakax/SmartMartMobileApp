@@ -12,5 +12,10 @@ class SearchpageActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.searchpage)
 
+        val ivBack = findViewById<android.widget.ImageView>(R.id.ivBack)
+        ivBack.setOnClickListener {
+            finish()
+        }
+
     }
 }

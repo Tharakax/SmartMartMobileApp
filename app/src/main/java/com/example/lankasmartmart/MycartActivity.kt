@@ -32,5 +32,10 @@ class MycartActivity : AppCompatActivity() {
         nextoncart.setOnClickListener {
             startActivity(android.content.Intent(this, PaymentinfoActivity::class.java))
         }
+
+        val ivBack = findViewById<android.widget.ImageView>(R.id.ivBack)
+        ivBack.setOnClickListener {
+            finish()
+        }
     }
 }

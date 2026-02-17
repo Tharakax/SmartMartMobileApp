@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LankaSmartMart</string>
     <string name="shop_by_category">Shop By Category</string>
+    <string name="back_to_home">Back TO Home</string>
 </resources>
