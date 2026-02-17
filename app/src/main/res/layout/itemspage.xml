@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:background="@color/white"
     android:padding="16dp">
 
@@ -176,7 +177,9 @@
                     app:cardCornerRadius="12dp"
                     app:cardElevation="2dp"
                     app:cardBackgroundColor="@color/white">
+
                     <LinearLayout
+                        android:id="@+id/orangecard"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -186,9 +189,9 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/img_24"
-                            android:scaleType="centerCrop"/>
-                            <!-- Assuming img_13 is cabbage-like -->
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_24" />
+                        <!-- Assuming img_13 is cabbage-like -->
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -199,7 +202,7 @@
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
-                         <TextView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="L kg"
@@ -415,31 +418,33 @@
         android:paddingBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_home"
-            android:layout_weight="1"
-            app:tint="@color/black" />
-
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0">
-            <!-- Central icon highlighted green -->
-             <ImageView
+            <ImageView
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:src="@drawable/circle_green" />
             <ImageView
+                android:id="@+id/navHome"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                 android:src="@drawable/ic_grid"
+                android:src="@drawable/ic_home"
                 app:tint="@color/white" />
         </FrameLayout>
 
         <ImageView
+            android:id="@+id/navGrid"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_grid"
+            android:layout_weight="1"
+            app:tint="@color/black"/>
+
+        <ImageView
+            android:id="@+id/navCart"
             android:layout_width="0dp"
             android:layout_height="24dp"
              android:src="@drawable/ic_bag"
@@ -447,6 +452,7 @@
             app:tint="@color/black" />
 
         <ImageView
+            android:id="@+id/navProfile"
             android:layout_width="0dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_menu"

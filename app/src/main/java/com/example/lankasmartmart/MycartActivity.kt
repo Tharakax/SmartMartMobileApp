@@ -11,6 +11,22 @@ class MycartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.mycart)
+
+        // Navigation Logic
+        val navHome = findViewById<android.widget.ImageView>(R.id.navHome)
+        navHome.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
+
+        val navGrid = findViewById<android.widget.ImageView>(R.id.navGrid)
+        navGrid.setOnClickListener {
+            startActivity(android.content.Intent(this, Home1::class.java))
+        }
+
+        val navProfile = findViewById<android.widget.ImageView>(R.id.navProfile)
+        navProfile.setOnClickListener {
+            startActivity(android.content.Intent(this, ProfilepageActivity::class.java))
+        }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
