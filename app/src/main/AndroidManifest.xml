@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LankaSmartMart">
         <activity
+            android:name=".PaymentinfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentmethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MycartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchpageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingleitemviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home1"
             android:exported="false" />
         <activity
