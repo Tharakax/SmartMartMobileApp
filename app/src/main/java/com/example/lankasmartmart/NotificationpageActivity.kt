@@ -17,5 +17,10 @@ class NotificationpageActivity : AppCompatActivity() {
             finish()
         }
 
+        val notificationCard = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.notificationcard)
+        notificationCard.setOnClickListener {
+            startActivity(android.content.Intent(this, OrderstateActivity::class.java))
+        }
+
     }
 }

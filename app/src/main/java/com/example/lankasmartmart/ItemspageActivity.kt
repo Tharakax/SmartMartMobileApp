@@ -18,6 +18,17 @@ class ItemspageActivity : AppCompatActivity() {
             startActivity(android.content.Intent(this, Home1::class.java))
         }
 
+        // Header Navigation
+        val ivBell = findViewById<android.widget.ImageView>(R.id.ivBell)
+        ivBell.setOnClickListener {
+            startActivity(android.content.Intent(this, NotificationpageActivity::class.java))
+        }
+
+        val cartIconLayout = findViewById<android.widget.FrameLayout>(R.id.cartIconLayout)
+        cartIconLayout.setOnClickListener {
+            startActivity(android.content.Intent(this, MycartActivity::class.java))
+        }
+
         val navCart = findViewById<android.widget.ImageView>(R.id.navCart)
         navCart.setOnClickListener {
             startActivity(android.content.Intent(this, MycartActivity::class.java))

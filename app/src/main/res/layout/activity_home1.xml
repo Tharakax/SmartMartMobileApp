@@ -31,6 +31,7 @@
         app:layout_constraintTop_toTopOf="@+id/tvBrand">
 
         <ImageView
+            android:id="@+id/ivcart"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_cart"

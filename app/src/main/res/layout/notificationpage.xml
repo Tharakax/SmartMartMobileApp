@@ -74,11 +74,12 @@
 
             <!-- Item 1: Highlighted (Order #345 Confirmed) -->
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/notificationcard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_notification_highlight"
-                android:padding="16dp"
-                android:layout_marginBottom="16dp">
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/tvTitle1"
@@ -95,8 +96,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3:57 PM"
-                    android:textSize="12sp"
                     android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/tvTitle1" />
 
@@ -108,9 +109,9 @@
                     android:text="Your Order is Confirmed. Please check everything is okay"
                     android:textColor="@color/text_secondary"
                     android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivAction1"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvTitle1"
-                    app:layout_constraintEnd_toStartOf="@+id/ivAction1"/>
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle1" />
 
                 <FrameLayout
                     android:id="@+id/ivAction1"
@@ -118,16 +119,18 @@
                     android:layout_height="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvTitle1">
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bg_circle_orange"/>
+                        android:background="@drawable/bg_circle_orange" />
+
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_list_alt"
-                        app:tint="@color/white"/>
+                        app:tint="@color/white" />
                 </FrameLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -18,6 +18,38 @@ class Home1 : AppCompatActivity() {
             startActivity(android.content.Intent(this, SearchpageActivity::class.java))
         }
 
+        // Header Navigation
+        val ivBell = findViewById<android.widget.ImageView>(R.id.ivBell)
+        ivBell.setOnClickListener {
+            startActivity(android.content.Intent(this, NotificationpageActivity::class.java))
+        }
+
+        val cartContainer = findViewById<android.widget.FrameLayout>(R.id.cartContainer)
+        cartContainer.setOnClickListener {
+            startActivity(android.content.Intent(this, MycartActivity::class.java))
+        }
+
+        // Category Navigation
+        val cardGroceries = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.cardGroceries)
+        cardGroceries.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
+
+        val cardHousehold = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.cardHousehold)
+        cardHousehold.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
+
+        val cardPersonal = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.cardPersonal)
+        cardPersonal.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
+
+        val cardStationery = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.cardStationery)
+        cardStationery.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
+
         val navHome = findViewById<android.widget.ImageView>(R.id.navHome)
         navHome.setOnClickListener {
             startActivity(android.content.Intent(this, ItemspageActivity::class.java))
