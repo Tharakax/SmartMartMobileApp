@@ -2,9 +2,364 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaymentinfoActivity">
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="LankaSmartMart"
+        android:textColor="@color/brand_green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Top Navigation Row -->
+    <LinearLayout
+        android:id="@+id/topNavLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrand">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/text_secondary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Card Details"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintTop_toBottomOf="@+id/topNavLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
+
+            <!-- Card Type Section -->
+            <TextView
+                android:id="@+id/tvCardTypeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card type"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- See All Button -->
+            <!-- Positioned roughly in line with cards or title, screenshot shows it next to cards -->
+            
+            <LinearLayout
+                android:id="@+id/cardTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tvCardTypeTitle">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:padding="4dp"
+                    android:background="@drawable/bg_input_light_blue"
+                    android:src="@drawable/ic_mastercard"
+                    android:layout_marginEnd="16dp"/>
+                
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                     android:padding="4dp"
+                    android:background="@drawable/bg_input_light_blue"
+                    android:src="@drawable/ic_visa"
+                    android:layout_marginEnd="16dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                     android:padding="4dp"
+                     android:background="@drawable/bg_input_light_blue"
+                    android:src="@drawable/ic_rupay"
+                    android:layout_marginEnd="16dp"/>
+                
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_input_light_blue"
+                    android:gravity="center"
+                    android:text="See\nAll"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <!-- Name on Card -->
+            <TextView
+                android:id="@+id/tvNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Name on card"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardTypeLayout" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_light_blue"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameTitle" />
+
+            <!-- Card Number -->
+            <TextView
+                android:id="@+id/tvCardNumberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Card Number"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+            <EditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_light_blue"
+                android:paddingHorizontal="16dp"
+                android:text="111 223 115 167 234 567"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@+id/tvCardNumberTitle" />
+
+            <!-- Row for Expiry and CVV -->
+            <LinearLayout
+                android:id="@+id/expiryCvvLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/etCardNumber">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expiration date"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_input_light_blue"
+                        android:paddingHorizontal="16dp"
+                        android:hint="mm/yy"
+                        android:inputType="date" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal" 
+                        android:text="CVV"
+                         android:layout_marginStart="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                        <!-- Gravity center to match screenshot seemingly centered label? No, assume start aligned generally but looks slightly offset. Standard align is fine. -->
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_input_light_blue"
+                        android:paddingHorizontal="16dp"
+                        android:inputType="numberPassword" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Summary -->
+            <TextView
+                android:id="@+id/tvSubtotalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Subtotal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expiryCvvLayout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1500.00"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvSubtotalLabel" />
+
+            <TextView
+                android:id="@+id/tvShippingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Shipping"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtotalLabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400.00"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvShippingLabel" />
+
+            <TextView
+                android:id="@+id/tvTotalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total (Tax incl.)"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvShippingLabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300.00"
+                android:textColor="@color/black"
+                android:textStyle="bold" 
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTotalLabel" />
+                <!-- Total 300?? 1500+400 = 1900. Screenshot says 300.00?? 
+                     Maybe there's a discount or partial payment shown? Or just mockup data.
+                     I will copy the screenshot data EXACTLY: 300.00 -->
+
+            <!-- Next Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_add_to_cart"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotalLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Bottom Nav Mock -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_home"
+            android:layout_weight="1"
+            app:tint="@color/black" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/circle_green" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_grid"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_bag"
+            android:layout_weight="1"
+            app:tint="@color/black" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:layout_weight="1"
+            app:tint="@color/black" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

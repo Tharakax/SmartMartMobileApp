@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LankaSmartMart">
         <activity
+            android:name=".ProfilepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderstateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationpageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderPlacedActivity"
+            android:exported="false" />
+        <activity
             android:name=".PaymentinfoActivity"
             android:exported="false" />
         <activity

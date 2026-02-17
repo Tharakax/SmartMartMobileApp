@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="24dp"
+    android:viewportWidth="40"
+    android:viewportHeight="24">
+  <path
+      android:fillColor="#FF1A1F71"
+      android:pathData="M2,12l4,-10h4l-4,10z M14,2l-2,10h-3l2,-10z M22,2l2,10h-3l-2,-10z M34,2l-4,10h-3l4,-10z"/>
+    <!-- Very abstract Visa-like shapes -->
+</vector>
