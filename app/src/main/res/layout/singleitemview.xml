@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:background="@color/white"
     android:padding="24dp">
 
@@ -30,6 +31,7 @@
         app:layout_constraintTop_toTopOf="@+id/tvBrand">
 
         <ImageView
+            android:id="@+id/carticon"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_cart"
@@ -340,6 +342,7 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addoranges"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_add_to_cart"

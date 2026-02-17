@@ -28,5 +28,11 @@ class ItemspageActivity : AppCompatActivity() {
             startActivity(android.content.Intent(this, ProfilepageActivity::class.java))
         }
 
+        // Navigate to Single Item View
+        val orangeCard = findViewById<android.widget.LinearLayout>(R.id.orangecard)
+        orangeCard.setOnClickListener {
+            startActivity(android.content.Intent(this, SingleitemviewActivity::class.java))
+        }
+
     }
 }

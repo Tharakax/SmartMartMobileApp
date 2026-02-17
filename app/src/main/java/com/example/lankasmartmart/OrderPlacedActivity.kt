@@ -11,6 +11,11 @@ class OrderPlacedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.order_placed)
+        // Navigation Logic
+        val btnNextOnConfirmed = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.nextonconfirmed)
+        btnNextOnConfirmed.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
 
     }
 }

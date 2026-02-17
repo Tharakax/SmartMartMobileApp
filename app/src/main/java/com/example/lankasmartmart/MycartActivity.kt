@@ -27,10 +27,10 @@ class MycartActivity : AppCompatActivity() {
         navProfile.setOnClickListener {
             startActivity(android.content.Intent(this, ProfilepageActivity::class.java))
         }
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val nextoncart = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.nextoncart)
+        nextoncart.setOnClickListener {
+            startActivity(android.content.Intent(this, PaymentinfoActivity::class.java))
         }
     }
 }

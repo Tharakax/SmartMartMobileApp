@@ -90,17 +90,18 @@
                 android:layout_height="350dp"
                 android:layout_marginTop="32dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/img_11" 
+                android:src="@drawable/img_26"
                 /> 
                 <!-- Using img_11 as placeholder for the confirmation illustration -->
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextonconfirmed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="64dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/bg_add_to_cart"
-                android:backgroundTint="#76FF03" 
+                android:backgroundTint="#76FF03"
                 android:text="Next"
                 android:textAllCaps="false"
                 android:textColor="@color/white"

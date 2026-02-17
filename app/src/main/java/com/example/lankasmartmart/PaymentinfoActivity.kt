@@ -11,6 +11,11 @@ class PaymentinfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.paymentinfo)
+        // Navigation Logic
+        val btnNextOnPayInfo = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.nextonpayinfo)
+        btnNextOnPayInfo.setOnClickListener {
+            startActivity(android.content.Intent(this, OrderPlacedActivity::class.java))
+        }
 
     }
 }
