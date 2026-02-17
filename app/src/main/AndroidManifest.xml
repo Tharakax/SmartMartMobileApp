@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LankaSmartMart">
         <activity
+            android:name=".ItemspageActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProfilepageActivity"
             android:exported="false" />
         <activity

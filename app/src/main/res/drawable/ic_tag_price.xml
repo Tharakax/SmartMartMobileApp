@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#FFFFFF">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M20,12l-8.5,-8.5C11.31,3.31 11.06,3.2 10.8,3.2H4.2C3.54,3.2 3,3.74 3,4.4v6.6c0,0.27 0.11,0.52 0.29,0.71l8.5,8.5c0.39,0.39 1.02,0.39 1.41,0l6.79,-6.79C20.39,13.02 20.39,12.39 20,12zM6.5,7.5C5.95,7.5 5.5,7.05 5.5,6.5S5.95,5.5 6.5,5.5s1,0.45 1,1S7.05,7.5 6.5,7.5z"/>
+    <!-- Basic Price Tag Shape -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,17l-1.41,-1.41 2.59,-2.59 -2.59,-2.59 1.41,-1.41 4,4z"/>
+        <!-- Star inside? Screenshot shows a star or similar icon inside the tag. Let's put a star in the middle. -->
+</vector>
