@@ -136,6 +136,7 @@
 
             <!-- Menu Item: My Orders -->
             <LinearLayout
+                android:id="@+id/myorderbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"

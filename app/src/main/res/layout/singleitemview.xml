@@ -367,6 +367,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
+            android:id="@+id/navHome"
             android:layout_width="0dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_home"
@@ -382,6 +383,7 @@
                 android:layout_height="56dp"
                 android:src="@drawable/circle_green" />
             <ImageView
+                android:id="@+id/navGrid"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
@@ -390,6 +392,7 @@
         </FrameLayout>
 
         <ImageView
+            android:id="@+id/navCart"
             android:layout_width="0dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_bag"
@@ -397,6 +400,7 @@
             app:tint="@color/black" />
 
         <ImageView
+            android:id="@+id/navProfile"
             android:layout_width="0dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_menu"

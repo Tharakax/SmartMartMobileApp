@@ -17,5 +17,26 @@ class PaymentinfoActivity : AppCompatActivity() {
             startActivity(android.content.Intent(this, OrderPlacedActivity::class.java))
         }
 
+        // Bottom Navigation Logic
+        val navHome = findViewById<android.widget.ImageView>(R.id.navHome)
+        navHome.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
+
+        val navGrid = findViewById<android.widget.ImageView>(R.id.navGrid)
+        navGrid.setOnClickListener {
+            startActivity(android.content.Intent(this, Home1::class.java))
+        }
+
+        val navCart = findViewById<android.widget.ImageView>(R.id.navCart)
+        navCart.setOnClickListener {
+            startActivity(android.content.Intent(this, MycartActivity::class.java))
+        }
+
+        val navProfile = findViewById<android.widget.ImageView>(R.id.navProfile)
+        navProfile.setOnClickListener {
+            startActivity(android.content.Intent(this, ProfilepageActivity::class.java))
+        }
+
     }
 }
