@@ -167,7 +167,7 @@
             android:layout_height="48dp"
             android:background="@drawable/white_circle_shadow"
             android:padding="10dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/img_27"
             app:tint="@null" /> <!-- Placeholder for Google Icon -->
 
         <ImageView
@@ -176,7 +176,7 @@
             android:layout_marginStart="24dp"
             android:background="@drawable/white_circle_shadow"
             android:padding="10dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/img_29"
             app:tint="@color/black" /> <!-- Placeholder for Apple Icon -->
     </LinearLayout>
 
@@ -184,74 +184,25 @@
         android:id="@+id/tvForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="76dp"
         android:text="Forgot\nPassword"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavPlaceholder"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="76dp"
         android:gravity="end"
         android:text="Don't have an\naccount?Sign up"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavPlaceholder"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Bottom Nav Placeholder -->
-    <LinearLayout
-        android:id="@+id/bottomNavPlaceholder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:background="@color/white"
-        android:paddingBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_launcher_foreground"
-            android:layout_weight="1"
-            app:tint="@color/black" />
-
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0">
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:src="@drawable/circle_green" />
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_launcher_foreground"
-                app:tint="@color/white" />
-        </FrameLayout>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_launcher_foreground"
-            android:layout_weight="1"
-            app:tint="@color/black" />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_launcher_foreground"
-            android:layout_weight="1"
-            app:tint="@color/black" />
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

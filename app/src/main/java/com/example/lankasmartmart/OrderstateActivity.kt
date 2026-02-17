@@ -17,5 +17,10 @@ class OrderstateActivity : AppCompatActivity() {
             finish()
         }
 
+        val backToHome = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.backtohome)
+        backToHome.setOnClickListener {
+            startActivity(android.content.Intent(this, ItemspageActivity::class.java))
+        }
+
     }
 }
