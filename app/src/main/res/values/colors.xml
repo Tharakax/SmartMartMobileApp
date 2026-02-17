@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brand_green">#3DDB55</color>
+    <color name="input_bg_green">#D1FFD6</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#888888</color>
+    <color name="gray">#CCCCCC</color>
+    
+    <!-- New Colors for Home Screen -->
+    <color name="banner_start">#FF9966</color>
+    <color name="banner_end">#FF5E62</color>
+    <color name="search_bg">#F5F5F5</color>
+    <color name="icon_tint">#000000</color>
+    <color name="notification_badge">#FF0000</color>
+</resources>
