@@ -12,5 +12,11 @@ class Sign_in : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_sign_in)
 
+        val btnLogin = findViewById<android.widget.Button>(R.id.btnLogin)
+        btnLogin.setOnClickListener {
+            val intent = android.content.Intent(this, Home1::class.java)
+            startActivity(intent)
+        }
+
     }
 }

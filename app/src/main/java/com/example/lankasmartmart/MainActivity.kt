@@ -12,5 +12,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        val imageView2 = findViewById<android.widget.ImageView>(R.id.imageView2)
+        imageView2.setOnClickListener {
+            val intent = android.content.Intent(this, SignUp::class.java)
+            startActivity(intent)
+        }
+
     }
 }
